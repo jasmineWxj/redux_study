@@ -1,20 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import APP from './App';
-import { Provider} from 'react-redux';
-// import { legacy_createStore as createStore } from 'redux';
-// import { ADDONE, SQUARE } from './action/action'
-// import REDUCER from './reducer/reducer'
+import { Provider } from 'react-redux'
 import store from './store';
-// store.dispatch(ADDONE(1))
-
+import Coma from './component/Coma';
+import Comb from './component/Comb';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
-        <APP />
+        <Coma />
+        <Comb />
     </Provider>
 );
 
